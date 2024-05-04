@@ -20,7 +20,7 @@ class EstimatedFragment : Fragment() {
 
     private val args: EstimatedFragmentArgs by navArgs()
 
-    
+
 
     var live: Int = 5
     var info: String = ""
