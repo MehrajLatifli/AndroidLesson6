@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav"
+    app:startDestination="@id/randomFragment">
+
+    <fragment
+        android:id="@+id/randomFragment"
+        android:name="com.example.androidlesson6.Fragments.RandomFragment"
+        android:label="fragment_random"
+        tools:layout="@layout/fragment_random" >
+        <action
+            android:id="@+id/action_randomFragment_to_estimatedFragment"
+            app:destination="@id/estimatedFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/estimatedFragment"
+        android:name="com.example.androidlesson6.Fragments.EstimatedFragment"
+        android:label="fragment_estimated"
+        tools:layout="@layout/fragment_estimated" >
+        <action
+            android:id="@+id/action_estimatedFragment_to_resultFragment"
+            app:destination="@id/resultFragment"
+            app:popUpTo="@id/estimatedFragment"
+            app:popUpToInclusive="true" />
+        <argument
+            android:name="randomNumber"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/resultFragment"
+        android:name="com.example.androidlesson6.Fragments.ResultFragment"
+        android:label="fragment_result"
+        tools:layout="@layout/fragment_result" >
+        <action
+            android:id="@+id/action_resultFragment_to_randomFragment"
+            app:destination="@id/randomFragment" />
+        <argument
+            android:name="info"
+            app:argType="string" />
+    </fragment>
+
+</navigation>
