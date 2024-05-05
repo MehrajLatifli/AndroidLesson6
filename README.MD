@@ -1,2 +1,2 @@
 
-[Link to Video](./Screen.mp4)
+[Screen](./Screen.mp4)
