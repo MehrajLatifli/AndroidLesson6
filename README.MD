@@ -1,1 +1,1 @@
-<video src="https://raw.githubusercontent.com/MehrajLatifli/AndroidLesson6/master/Screen.mp4" width="300" />
+<video src="https://github.com/MehrajLatifli/AndroidLesson6/blob/master/Screen.mp4" width="300" />
